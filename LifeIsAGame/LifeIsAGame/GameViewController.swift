@@ -15,7 +15,18 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        var count = 0
-        let box = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxCenter = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxTop = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxBottom = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxMRight = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxTRight = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxMLeft = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxTLeft = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxBLeft = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let boxBRight = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
+        let floor = SCNFloor()
+        floor.reflectivity = 0.20
+
 //        var containers: [SCNBox] = []
 //        while count <= 24 {
 //            let B = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0)
@@ -28,17 +39,17 @@ class GameViewController: UIViewController {
      
         // create a new scene
         let scene = SCNScene()
-        
         //create a generic cube node
-        let s = SCNNode(geometry: box)
-        let s2 = SCNNode(geometry: box)
-        let s3 = SCNNode(geometry: box)
-        let s4 = SCNNode(geometry: box)
-        let s5 = SCNNode(geometry: box)
-        let s6 = SCNNode(geometry: box)
-        let s7 = SCNNode(geometry: box)
-        let s8 = SCNNode(geometry: box)
-        let s9 = SCNNode(geometry: box)
+        let s = SCNNode(geometry: boxCenter)
+        let s2 = SCNNode(geometry: boxTop)
+        let s3 = SCNNode(geometry: boxBottom)
+        let s4 = SCNNode(geometry: boxMRight)
+        let s5 = SCNNode(geometry: boxMLeft)
+        let s6 = SCNNode(geometry: boxTLeft)
+        let s7 = SCNNode(geometry: boxTRight)
+        let s8 = SCNNode(geometry: boxBLeft)
+        let s9 = SCNNode(geometry: boxBRight)
+        let sceneFloor = SCNNode(geometry: floor)
         scene.rootNode.addChildNode(s)
         scene.rootNode.addChildNode(s2)
         scene.rootNode.addChildNode(s3)
@@ -48,21 +59,28 @@ class GameViewController: UIViewController {
         scene.rootNode.addChildNode(s7)
         scene.rootNode.addChildNode(s8)
         scene.rootNode.addChildNode(s9)
+        scene.rootNode.addChildNode(sceneFloor)
+//        print(s9.worldOrientation)
+//        if s9.worldOrientation.x == 1.0 {
+//            print("it works")
+//        } else {
+//            print("It's broken too")
+//        }
         // create and add a camera to the scene
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         scene.rootNode.addChildNode(cameraNode)
-        s.position = SCNVector3(0, 0, 0)
-        s2.position = SCNVector3(0, 1, 0)
-        s3.position = SCNVector3(0, -1, 0)
-        s4.position = SCNVector3(1, 0, 0)
-        s5.position = SCNVector3(-1, 0, 0)
-        s6.position = SCNVector3(-1, 1, 0)
-        s7.position = SCNVector3(1, 1, 0)
-        s8.position = SCNVector3(-1, -1, 0)
-        s9.position = SCNVector3(1, -1, 0)
+        s.position = SCNVector3(0, 5, 0)
+        s2.position = SCNVector3(0, 6, 0)
+        s3.position = SCNVector3(0, 4, 0)
+        s4.position = SCNVector3(1, 5, 0)
+        s5.position = SCNVector3(-1, 5, 0)
+        s6.position = SCNVector3(-1, 6, 0)
+        s7.position = SCNVector3(1, 6, 0)
+        s8.position = SCNVector3(-1, 4, 0)
+        s9.position = SCNVector3(1, 4, 0)
         // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 10)
+        cameraNode.position = SCNVector3(x: 0, y: 6, z: 30)
         
         // create and add a light to the scene
         let lightNode = SCNNode()
@@ -79,7 +97,6 @@ class GameViewController: UIViewController {
         scene.rootNode.addChildNode(ambientLightNode)
         
         // retrieve the node
-          
         
         // animate the 3d object
 //        s.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 1, y: 1, z: 1, duration: 5)))
