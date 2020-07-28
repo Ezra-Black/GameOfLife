@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FD4B15024CF934400303FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B14F24CF934400303FE9 /* AppDelegate.swift */; };
+		7FD4B15224CF934400303FE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B15124CF934400303FE9 /* SceneDelegate.swift */; };
+		7FD4B15724CF934400303FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4B15524CF934400303FE9 /* Main.storyboard */; };
+		7FD4B15A24CF934400303FE9 /* ConwaysGOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B15824CF934400303FE9 /* ConwaysGOL.xcdatamodeld */; };
+		7FD4B15C24CF934600303FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4B15B24CF934600303FE9 /* Assets.xcassets */; };
+		7FD4B15F24CF934600303FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4B15D24CF934600303FE9 /* LaunchScreen.storyboard */; };
+		7FD4B16A24CF934700303FE9 /* ConwaysGOLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B16924CF934700303FE9 /* ConwaysGOLUITests.swift */; };
+		7FD4B17B24CF93D200303FE9 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B17A24CF93D200303FE9 /* GameView.swift */; };
+		7FD4B17D24CF93E900303FE9 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B17C24CF93E900303FE9 /* Cell.swift */; };
+		7FD4B17F24CF93F200303FE9 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B17E24CF93F200303FE9 /* Grid.swift */; };
+		7FD4B18124CF946000303FE9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4B18024CF946000303FE9 /* View.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FD4B16624CF934700303FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FD4B14424CF934400303FE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FD4B14B24CF934400303FE9;
+			remoteInfo = ConwaysGOL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FD4B14C24CF934400303FE9 /* ConwaysGOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConwaysGOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD4B14F24CF934400303FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FD4B15124CF934400303FE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7FD4B15624CF934400303FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FD4B15924CF934400303FE9 /* ConwaysGOL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConwaysGOL.xcdatamodel; sourceTree = "<group>"; };
+		7FD4B15B24CF934600303FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FD4B15E24CF934600303FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FD4B16024CF934600303FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD4B16524CF934700303FE9 /* ConwaysGOLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConwaysGOLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD4B16924CF934700303FE9 /* ConwaysGOLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConwaysGOLUITests.swift; sourceTree = "<group>"; };
+		7FD4B16B24CF934700303FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD4B17A24CF93D200303FE9 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		7FD4B17C24CF93E900303FE9 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		7FD4B17E24CF93F200303FE9 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		7FD4B18024CF946000303FE9 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FD4B14924CF934400303FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD4B16224CF934700303FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FD4B14324CF934400303FE9 = {
+			isa = PBXGroup;
+			children = (
+				7FD4B14E24CF934400303FE9 /* ConwaysGOL */,
+				7FD4B16824CF934700303FE9 /* ConwaysGOLUITests */,
+				7FD4B14D24CF934400303FE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FD4B14D24CF934400303FE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4B14C24CF934400303FE9 /* ConwaysGOL.app */,
+				7FD4B16524CF934700303FE9 /* ConwaysGOLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FD4B14E24CF934400303FE9 /* ConwaysGOL */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4B17724CF936700303FE9 /* Models */,
+				7FD4B17624CF936100303FE9 /* Views */,
+				7FD4B17424CF934F00303FE9 /* Controllers */,
+				7FD4B14F24CF934400303FE9 /* AppDelegate.swift */,
+				7FD4B15124CF934400303FE9 /* SceneDelegate.swift */,
+				7FD4B15524CF934400303FE9 /* Main.storyboard */,
+				7FD4B15B24CF934600303FE9 /* Assets.xcassets */,
+				7FD4B15D24CF934600303FE9 /* LaunchScreen.storyboard */,
+				7FD4B16024CF934600303FE9 /* Info.plist */,
+				7FD4B15824CF934400303FE9 /* ConwaysGOL.xcdatamodeld */,
+			);
+			path = ConwaysGOL;
+			sourceTree = "<group>";
+		};
+		7FD4B16824CF934700303FE9 /* ConwaysGOLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4B16924CF934700303FE9 /* ConwaysGOLUITests.swift */,
+				7FD4B16B24CF934700303FE9 /* Info.plist */,
+			);
+			path = ConwaysGOLUITests;
+			sourceTree = "<group>";
+		};
+		7FD4B17424CF934F00303FE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4B18024CF946000303FE9 /* View.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7FD4B17624CF936100303FE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4B17A24CF93D200303FE9 /* GameView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7FD4B17724CF936700303FE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4B17C24CF93E900303FE9 /* Cell.swift */,
+				7FD4B17E24CF93F200303FE9 /* Grid.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FD4B14B24CF934400303FE9 /* ConwaysGOL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD4B16E24CF934700303FE9 /* Build configuration list for PBXNativeTarget "ConwaysGOL" */;
+			buildPhases = (
+				7FD4B14824CF934400303FE9 /* Sources */,
+				7FD4B14924CF934400303FE9 /* Frameworks */,
+				7FD4B14A24CF934400303FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConwaysGOL;
+			productName = ConwaysGOL;
+			productReference = 7FD4B14C24CF934400303FE9 /* ConwaysGOL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FD4B16424CF934700303FE9 /* ConwaysGOLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD4B17124CF934700303FE9 /* Build configuration list for PBXNativeTarget "ConwaysGOLUITests" */;
+			buildPhases = (
+				7FD4B16124CF934700303FE9 /* Sources */,
+				7FD4B16224CF934700303FE9 /* Frameworks */,
+				7FD4B16324CF934700303FE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FD4B16724CF934700303FE9 /* PBXTargetDependency */,
+			);
+			name = ConwaysGOLUITests;
+			productName = ConwaysGOLUITests;
+			productReference = 7FD4B16524CF934700303FE9 /* ConwaysGOLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FD4B14424CF934400303FE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Casanova Studios";
+				TargetAttributes = {
+					7FD4B14B24CF934400303FE9 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					7FD4B16424CF934700303FE9 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 7FD4B14B24CF934400303FE9;
+					};
+				};
+			};
+			buildConfigurationList = 7FD4B14724CF934400303FE9 /* Build configuration list for PBXProject "ConwaysGOL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FD4B14324CF934400303FE9;
+			productRefGroup = 7FD4B14D24CF934400303FE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FD4B14B24CF934400303FE9 /* ConwaysGOL */,
+				7FD4B16424CF934700303FE9 /* ConwaysGOLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FD4B14A24CF934400303FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD4B15F24CF934600303FE9 /* LaunchScreen.storyboard in Resources */,
+				7FD4B15C24CF934600303FE9 /* Assets.xcassets in Resources */,
+				7FD4B15724CF934400303FE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD4B16324CF934700303FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FD4B14824CF934400303FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD4B15A24CF934400303FE9 /* ConwaysGOL.xcdatamodeld in Sources */,
+				7FD4B15024CF934400303FE9 /* AppDelegate.swift in Sources */,
+				7FD4B17D24CF93E900303FE9 /* Cell.swift in Sources */,
+				7FD4B17B24CF93D200303FE9 /* GameView.swift in Sources */,
+				7FD4B15224CF934400303FE9 /* SceneDelegate.swift in Sources */,
+				7FD4B18124CF946000303FE9 /* View.swift in Sources */,
+				7FD4B17F24CF93F200303FE9 /* Grid.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD4B16124CF934700303FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD4B16A24CF934700303FE9 /* ConwaysGOLUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FD4B16724CF934700303FE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FD4B14B24CF934400303FE9 /* ConwaysGOL */;
+			targetProxy = 7FD4B16624CF934700303FE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FD4B15524CF934400303FE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FD4B15624CF934400303FE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FD4B15D24CF934600303FE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FD4B15E24CF934600303FE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FD4B16C24CF934700303FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FD4B16D24CF934700303FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FD4B16F24CF934700303FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3XLM68NV;
+				INFOPLIST_FILE = ConwaysGOL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CasanovaStudios.ConwaysGOL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FD4B17024CF934700303FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3XLM68NV;
+				INFOPLIST_FILE = ConwaysGOL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CasanovaStudios.ConwaysGOL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FD4B17224CF934700303FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3XLM68NV;
+				INFOPLIST_FILE = ConwaysGOLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CasanovaStudios.ConwaysGOLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConwaysGOL;
+			};
+			name = Debug;
+		};
+		7FD4B17324CF934700303FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL3XLM68NV;
+				INFOPLIST_FILE = ConwaysGOLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CasanovaStudios.ConwaysGOLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConwaysGOL;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FD4B14724CF934400303FE9 /* Build configuration list for PBXProject "ConwaysGOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD4B16C24CF934700303FE9 /* Debug */,
+				7FD4B16D24CF934700303FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD4B16E24CF934700303FE9 /* Build configuration list for PBXNativeTarget "ConwaysGOL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD4B16F24CF934700303FE9 /* Debug */,
+				7FD4B17024CF934700303FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD4B17124CF934700303FE9 /* Build configuration list for PBXNativeTarget "ConwaysGOLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD4B17224CF934700303FE9 /* Debug */,
+				7FD4B17324CF934700303FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FD4B15824CF934400303FE9 /* ConwaysGOL.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FD4B15924CF934400303FE9 /* ConwaysGOL.xcdatamodel */,
+			);
+			currentVersion = 7FD4B15924CF934400303FE9 /* ConwaysGOL.xcdatamodel */;
+			path = ConwaysGOL.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7FD4B14424CF934400303FE9 /* Project object */;
+}
