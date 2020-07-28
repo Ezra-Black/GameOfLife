@@ -18,13 +18,27 @@ protocol GameStateDel {
 //game grid class
 
 class Grid: NSObject {
-    //size
-    //delegate
-    //cells to populate/collection of cells
-    //generation currently on
-    //population of the grid
-    //init the grid and create a size for the grid
+//    let size: Int
+//    var cellsInGrid: [Cell] = []
+//    var delegate: GameStateDel?
+//
+//    var gen = 0
+//    var pop: Int {
+//        cellsInGrid.filter{ $0.state == .alive }.count
+//    }
+
+//    public init(gridSize: Int) {
+//        self.size = gridSize
+//        for y in 0..<size {
+//            for x in 0..<size {
+//                let cell = Cell(x: x, y: y)
+//                cellsInGrid.append(cell)
+//            }
+//        }
+//    }
 }
+
+
 
 //game lifecycle
 
