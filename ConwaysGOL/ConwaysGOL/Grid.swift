@@ -15,6 +15,13 @@ protocol GameStateDel {
     func updateGrid()
 }
 
+public enum Patterns {
+    case random
+    case blinker
+    case glider
+    case pulsar
+}
+
 //game grid class
 
 class Grid: NSObject {
@@ -125,12 +132,7 @@ class Grid: NSObject {
         }
     }
     
-    public enum Patterns {
-        case random
-        case blinker
-        case glider
-        case pulsar
-    }
+    
     
     public func examples(pattern: Patterns = .glider) {
         print(pattern)

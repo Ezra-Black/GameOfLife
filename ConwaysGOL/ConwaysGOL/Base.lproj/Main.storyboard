@@ -51,7 +51,7 @@
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-ff-dMS" customClass="GameView" customModule="ConwaysGOL" customModuleProvider="target">
                                 <rect key="frame" x="483" y="52" width="381" height="349"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="349" id="4z8-6A-IGJ"/>
                                     <constraint firstAttribute="width" constant="381" id="8At-SO-Syu"/>
