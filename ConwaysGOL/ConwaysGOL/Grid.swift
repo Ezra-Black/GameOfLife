@@ -34,6 +34,7 @@ class Grid: NSObject {
             }
         }
         super.init()
+        self.examples(pattern: .random)
     }
     
     func cellTapped(at index: Int) {
@@ -118,18 +119,94 @@ class Grid: NSObject {
     }
     
     private func randomize() {
-          for cell in cellsInGrid {
-              let randomState = Int.random(in: 0...6)
-              cell.state = randomState == 0 ? .alive : .dead
-          }
-      }
+        for cell in cellsInGrid {
+            let randomState = Int.random(in: 0...6)
+            cell.state = randomState == 0 ? .alive : .dead
+        }
+    }
     
+    public enum Patterns {
+        case random
+        case blinker
+        case glider
+        case pulsar
+    }
+    
+    public func examples(pattern: Patterns = .glider) {
+        print(pattern)
+        clearGrid()
+        switch pattern {
+        case .random:
+            randomize()
+        case .blinker:
+            cellAt(x: 3, y: 2).state = .alive
+            cellAt(x: 4, y: 2).state = .alive
+            cellAt(x: 5, y: 2).state = .alive
+        case .glider:
+            cellAt(x: 3, y: 2).state = .alive
+            cellAt(x: 4, y: 3).state = .alive
+            cellAt(x: 4, y: 4).state = .alive
+            cellAt(x: 3, y: 4).state = .alive
+            cellAt(x: 2, y: 4).state = .alive
+        case .pulsar:
+            cellAt(x: 6, y: 2).state = .alive
+            cellAt(x: 6, y: 3).state = .alive
+            cellAt(x: 6, y: 4).state = .alive
+            cellAt(x: 7, y: 4).state = .alive
+            cellAt(x: 12, y: 2).state = .alive
+            cellAt(x: 12, y: 3).state = .alive
+            cellAt(x: 12, y: 4).state = .alive
+            cellAt(x: 11, y: 4).state = .alive
+            cellAt(x: 2, y: 6).state = .alive
+            cellAt(x: 3, y: 6).state = .alive
+            cellAt(x: 4, y: 6).state = .alive
+            cellAt(x: 4, y: 7).state = .alive
+            cellAt(x: 7, y: 6).state = .alive
+            cellAt(x: 8, y: 6).state = .alive
+            cellAt(x: 8, y: 7).state = .alive
+            cellAt(x: 6, y: 7).state = .alive
+            cellAt(x: 6, y: 8).state = .alive
+            cellAt(x: 7, y: 8).state = .alive
+            cellAt(x: 10, y: 6).state = .alive
+            cellAt(x: 11, y: 6).state = .alive
+            cellAt(x: 10, y: 7).state = .alive
+            cellAt(x: 12, y: 7).state = .alive
+            cellAt(x: 11, y: 8).state = .alive
+            cellAt(x: 12, y: 8).state = .alive
+            cellAt(x: 14, y: 6).state = .alive
+            cellAt(x: 15, y: 6).state = .alive
+            cellAt(x: 16, y: 6).state = .alive
+            cellAt(x: 14, y: 7).state = .alive
+            cellAt(x: 2, y: 12).state = .alive
+            cellAt(x: 3, y: 12).state = .alive
+            cellAt(x: 4, y: 12).state = .alive
+            cellAt(x: 4, y: 11).state = .alive
+            cellAt(x: 6, y: 10).state = .alive
+            cellAt(x: 7, y: 10).state = .alive
+            cellAt(x: 6, y: 11).state = .alive
+            cellAt(x: 8, y: 11).state = .alive
+            cellAt(x: 7, y: 12).state = .alive
+            cellAt(x: 8, y: 12).state = .alive
+            cellAt(x: 11, y: 10).state = .alive
+            cellAt(x: 12, y: 10).state = .alive
+            cellAt(x: 12, y: 11).state = .alive
+            cellAt(x: 10, y: 11).state = .alive
+            cellAt(x: 10, y: 12).state = .alive
+            cellAt(x: 11, y: 12).state = .alive
+            cellAt(x: 14, y: 11).state = .alive
+            cellAt(x: 14, y: 12).state = .alive
+            cellAt(x: 15, y: 12).state = .alive
+            cellAt(x: 16, y: 12).state = .alive
+            cellAt(x: 6, y: 14).state = .alive
+            cellAt(x: 6, y: 15).state = .alive
+            cellAt(x: 6, y: 16).state = .alive
+            cellAt(x: 7, y: 14).state = .alive
+            cellAt(x: 12, y: 14).state = .alive
+            cellAt(x: 12, y: 15).state = .alive
+            cellAt(x: 12, y: 16).state = .alive
+            cellAt(x: 11, y: 14).state = .alive
+        }
+        gen = 0
+        callDelegate()
+    }
 }
-
-
-//game lifecycle
-
-
-  
-
-//game state functionality/ clearing screen/ updating patterns
