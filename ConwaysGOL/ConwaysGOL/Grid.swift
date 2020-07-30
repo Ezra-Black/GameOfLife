@@ -103,11 +103,27 @@ class Grid: NSObject {
         callDelegate()
     }
     
+    func clearGrid() {
+        for cell in cellsInGrid {
+            cell.state = .dead
+        }
+        gen = 0
+        callDelegate()
+    }
+    
     private func callDelegate() {
         delegate?.presentGeneration()
         delegate?.presentPopulation()
         delegate?.updateGrid()
     }
+    
+    private func randomize() {
+          for cell in cellsInGrid {
+              let randomState = Int.random(in: 0...6)
+              cell.state = randomState == 0 ? .alive : .dead
+          }
+      }
+    
 }
 
 
