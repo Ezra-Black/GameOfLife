@@ -67,7 +67,7 @@ class GameView: UIView {
         setNeedsDisplay()
     }
     //clears grid and implements basic shapes known to most devs in the community/famous shapes such as ships.
-    public func Patterns(pattern: Patterns) {
+    public func patterns(pattern: Patterns) {
         grid.clearGrid()
         grid.examples(pattern: pattern)
     }
