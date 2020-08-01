@@ -1,1 +1,1 @@
-GameOfLife
+[![Journey To Building The Algorithm](https://i.ytimg.com/vi/MHUoAPw3xbs/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBrWrkB7Ukm1YXo6b6moYmyvovdmA)](https://www.youtube.com/watch?v=MHUoAPw3xbs)
