@@ -27,7 +27,7 @@ class View: UIViewController {
     @IBOutlet weak var playButtonLabel: UIButton!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         gameView.grid.delegate = self
@@ -82,9 +82,9 @@ class View: UIViewController {
     @IBAction func stepButtonTapped(_ sender: Any) {
         gameView.step()
     }
-  
+    
     @objc private func buttonTapped(_ sender: UIButton) {
-     gameView.tappedCell(at: sender.tag)
+        gameView.tappedCell(at: sender.tag)
     }
     
     private func pause() {
@@ -96,20 +96,20 @@ class View: UIViewController {
         var index = 0
         var topOffset = CGFloat(0)
         var leadingOffset = CGFloat(0)
-
+        
         for y in 0..<gameView.grid.size {
             for x in 0..<gameView.grid.size {
                 print(index, x, y)
                 let button = UIButton()
                 button.tag = index
                 index += 1
-
+                
                 button.backgroundColor = .clear
                 button.layer.borderWidth = 0.5
                 button.layer.borderColor = UIColor.systemGray6.cgColor
                 button.translatesAutoresizingMaskIntoConstraints = false
                 button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-
+                
                 gameView.addSubview(button)
                 NSLayoutConstraint.activate([
                     button.topAnchor.constraint(equalTo: gameView.topAnchor, constant: topOffset),
@@ -118,7 +118,7 @@ class View: UIViewController {
                     button.widthAnchor.constraint(equalToConstant: 15)
                 ])
                 buttons.append(button)
-
+                
                 leadingOffset += 15
                 if leadingOffset >= 375 {
                     leadingOffset = 0

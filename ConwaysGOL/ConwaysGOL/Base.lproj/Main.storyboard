@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GzO-cN-zzM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GzO-cN-zzM">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,16 +43,16 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="nd0-uP-B5Z">
-                                <rect key="frame" x="60" y="126" width="370" height="42"/>
+                                <rect key="frame" x="60" y="126" width="368" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULR-4k-VpI">
-                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAq-QY-8S2">
-                                        <rect key="frame" x="206.5" y="0.0" width="163.5" height="42"/>
+                                        <rect key="frame" x="205.5" y="0.0" width="162.5" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -65,7 +67,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.58591726040000003" green="0.15358274769999999" blue="0.13213312360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" image="play" catalog="system">
-                                            <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemPinkColor"/>
                                         </state>
                                         <connections>
                                             <action selector="playPauseButtonTapped:" destination="iiz-a3-BHH" eventType="touchUpInside" id="wIk-w8-eAO"/>
@@ -91,7 +93,7 @@
                                         <rect key="frame" x="333" y="0.0" width="81" height="22"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.58591726040000003" green="0.15358274769999999" blue="0.13213312360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" image="table.badge.more" catalog="system"/>
+                                        <state key="normal" image="tablecells" catalog="system"/>
                                         <connections>
                                             <action selector="examplesButtonTapped:" destination="iiz-a3-BHH" eventType="touchUpInside" id="4Qk-SL-djm"/>
                                         </connections>
@@ -105,17 +107,18 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RuT-8I-oQP">
                                 <rect key="frame" x="60" y="176" width="414" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">1. Any live cell with fewer than two live neighbours dies, as if by underpopulation. 
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">1. Any live cell with fewer than two live neighbours dies, as if by underpopulation. 
 2. Any live cell with two or three live neighbours lives on to the next generation.
  3. Any live cell with more than three live neighbours dies, as if by overpopulation.
- 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</mutableString>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+ 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</string>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="crA-Bg-SvY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5Ue-n8-WpI" firstAttribute="top" secondItem="nd0-uP-B5Z" secondAttribute="bottom" constant="181" id="4wW-Xm-0hY"/>
                             <constraint firstItem="nkm-Dj-V8Z" firstAttribute="leading" secondItem="nd0-uP-B5Z" secondAttribute="leading" id="BYq-yg-tga"/>
@@ -128,7 +131,6 @@
                             <constraint firstItem="nd0-uP-B5Z" firstAttribute="leading" secondItem="5Ue-n8-WpI" secondAttribute="leading" id="e66-bL-Oj9"/>
                             <constraint firstItem="bVC-ff-dMS" firstAttribute="leading" secondItem="nkm-Dj-V8Z" secondAttribute="trailing" constant="60" id="gGv-Dh-71G"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="crA-Bg-SvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="GOL 2D " id="FIv-TJ-pkg"/>
                     <connections>
@@ -165,6 +167,15 @@
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="play" catalog="system" width="120" height="128"/>
-        <image name="table.badge.more" catalog="system" width="128" height="90"/>
+        <image name="tablecells" catalog="system" width="128" height="93"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
